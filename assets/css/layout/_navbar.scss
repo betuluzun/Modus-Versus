@@ -1,0 +1,32 @@
+#navbar {
+  background-color: $primary_color;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+
+  .navbar-right {
+    justify-content: flex-end;
+  }
+  .nav-link {
+    padding: 0.4rem 0.8rem;
+    margin: 0 0.5rem;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    &.active {
+      background-color: darken($primary_color, 10%);
+      border-radius: 5px;
+      box-shadow: 0px 3px darken($primary_color, 15%)
+    }
+    &.dropdown-toggle:focus {
+      background: $secondary_color;
+      border-radius: 5px;
+    }
+  }
+  .dropdown-toggle {
+    img {
+      width: 16px;
+    }
+  }
+}

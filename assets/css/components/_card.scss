@@ -1,0 +1,80 @@
+.topServices-card {
+  @extend .dFlex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  background-color: #ececec;
+  border-radius: 5px;
+  .topService-inner {
+      padding-right: 10px;
+      padding-top: 10px;
+    p {
+      font-size: 0.9rem;
+      color: #858585  ;
+    }
+    h3 {
+      color: #858585;
+    }
+  }
+  .topService-action {
+    align-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .topServices-card {
+    display: block;
+  }
+}
+
+.vertical-card {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 50px 15px;
+  border-radius: 5px;
+  box-shadow: 0 3px #e8e8e8;
+  svg {
+    width: 50px;
+    height: 50px;
+    fill: $primary_color;
+  }
+  h6 {
+    color: #858585;
+    font-weight: 700;
+    padding: 10px;
+  }
+  p {
+    font-size: 0.8rem;
+    color: #858585  ;
+    padding-top: 10px ;
+  }
+  &.white {
+    background-color: #fff;
+    svg {
+      fill: $secondary_color;
+    }
+  }
+}
+.vertical-card-action {
+  text-align: center;
+  margin-top: -30px;
+  button {
+    font-size: 0.9rem;
+  }
+}
+
+
+.blog-card {
+  display: flex;
+  margin: 10px 0;
+  img {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    padding: 0 15px;
+    margin-right: 10px;
+  }
+  .blog-inner {
+    .date {
+      font-size: 0.8rem;
+    }
+  }
+}

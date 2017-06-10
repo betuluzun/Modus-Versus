@@ -1,0 +1,38 @@
+#footer {
+  background-color: $primary_color;
+  padding: 40px 0;
+  .contact {
+    padding-top: 10px;
+    p {
+      margin-bottom: 0;
+    }
+    i {
+      font-size: 1.1rem;
+      color: #fff;
+      padding-left: 10px;
+      font-weight: 500;
+    }
+  }
+  .navigation-menu {
+    li {
+      padding: 2px 10px;
+      img{
+        padding-right: 5px;
+      }
+    }
+  }
+  .blog-title {
+    color: #fff;
+  }
+}
+
+#footer-bottom {
+  background-color: darken($primary_color, 10%);
+  padding: 15px;
+  .social-icons {
+    img {
+      width: 30px;
+      padding: 0 5px;
+    }
+  }
+}
